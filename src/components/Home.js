@@ -10,9 +10,9 @@ function Home(){
     let history = useNavigate();
 
     const handleEdit = (id, name, age) => {
-        localStorage.setitem('Name',name);
-        localStorage.setitem('Age',age);
-        localStorage.setitem('Id',id);
+        localStorage.setItem('Name',name);
+        localStorage.setItem('Age',age);
+        localStorage.setItem('Id',id);
     }
 
     const handleDelete = (id) => {
@@ -57,10 +57,10 @@ function Home(){
                                         </td>
                                         <td>
                                             <Link to={'/edit'}>
-                                            <Button onClick={() => handleEdit(item.id, item.Name, item.Age)}>EDIT</Button>
+                                            <Button className='btn btn-success' onClick={() => handleEdit(item.id, item.Name, item.Age)}>EDIT</Button>
                                             </Link>
                                             &nbsp;
-                                            <Button onClick={() => handleDelete(item.id)}>DELETE</Button>
+                                            <Button className='btn btn-danger' onClick={() => handleDelete(item.id)}>DELETE</Button>
                                         </td>
                                     </tr>
                                 )
@@ -74,7 +74,7 @@ function Home(){
                         <br>
                         </br>
                         <Link className='d-grid gap-2' to="/create">
-                            <Button size="1g">Create</Button>
+                            <Button className='btn btn-secondary' size="1g">Create</Button>
                         </Link>
             </div>
         </Fragment>

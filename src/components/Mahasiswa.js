@@ -1,17 +1,17 @@
 const Mahasiswa = [
 {
     id:"1",
-    Name:"Putra Muhamamd Ferdiansyah",
-    Age:"22"
+    Name:"Aldiansyah Nur Prasetya",
+    Age:"20"
 },{
     id:"2",
-    Name:"Muhammad Syuqron",
-    Age:"18"
+    Name:"Dhaefano Faturrachman",
+    Age:"21"
 },{
     id:"3",
-    Name:"Putri Ayu ",
-    Age:"20"
+    Name:"Muhammad Randika",
+    Age:"24"
 }
 ]
 
-export default Mahasiswa;
+export default Mahasiswa
